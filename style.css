@@ -1,0 +1,57 @@
+/*  custom styles */
+
+body {
+  background-color: rgb(23,33,42);
+}
+
+.head {
+
+  color: rgb(22,160,133);
+  font-family: 'Baloo Bhaijaan', cursive;
+  margin-top: 30px;
+  margin-bottom: 0;
+}
+
+.title {
+
+  font-size: 5em;
+}
+
+.controlsTitle {
+  display: table;
+  margin: auto;
+  font-size: 27px;
+  color: rgb(149,165,166);
+  font-family: 'Montserrat', sans-serif;
+  margin-bottom: 15px;
+}
+
+.plantTitle {
+  font-size: 4em;
+  display: table;
+  margin: auto;
+
+  color: rgb(236,240,241);
+  font-family: 'Dancing Script', cursive;
+  margin-bottom: 0;
+  margin-top: 135px;
+}
+
+.headUnderline {
+  margin-top: 0;
+  background-color: rgb(236,240,241);
+  width: 900px;
+  float: left;
+}
+
+
+
+.btn {
+  display: table;
+  margin: auto;
+  background-color: white;
+  background: rgb(61, 86, 110);
+  color: rgb(149, 165, 166);
+  border-color: rgb(189, 195, 199);
+
+}
