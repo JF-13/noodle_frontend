@@ -18,6 +18,13 @@ body {
   font-size: 6em;
 }
 
+.logo {
+  width: 380px;
+  margin-top: 40px;
+  margin-bottom: 10px;
+  margin-left: -17px;
+}
+
 .headUnderline {
   margin-top: 0;
   background-color: rgb(149, 165, 166);
@@ -59,42 +66,61 @@ body {
   /*color: rgb(236,240,241);*/
   font-family: 'Dancing Script', cursive;
   margin-bottom: 5;
-  margin-top: 135px;
+  margin-top: 145px;
 }
 
 .controlsTitle {
   display: table;
   margin: auto;
   font-size: 20px;
-  color: rgb(149,165,166);
+  /*color: rgb(149,165,166);*/
+  color: rgb(61,86,110);
   font-family: 'Montserrat', sans-serif;
-  margin-bottom: 15px;
+  margin-bottom: 30px;
 }
 
 .sensors {
   font-size: 30px;
-  margin-top: 30px;
+  margin-top: 10px;
 }
 
 .description {
-  color: rgb(189,195,199);
+  color: rgb(149, 165, 166);
   font-family: 'Questrial', sans-serif;
-  font-size: 17px;
-  margin-top: 0;
-}
-
-.moisture {
-  color: rgb(142,68,173);
+  font-size: 15px;
+  margin-top: -10px;
 }
 
 .humidity {
-  color: rgb(231,76,60);
+  color: rgb(142,68,173);
 }
 
 .temperature {
-  color: rgb(230,126,34);
+  color: rgb(192,57,43);
 }
 
 .exposure {
+  color: rgb(22,160,133);
+}
+
+.moisture {
   color: rgb(41,128,185);
+}
+
+.up {
+  color: rgb(61,86,110);
+
+}
+
+.down {
+  color: rgb(44,62,80);
+}
+
+.glyphicon {
+    font-size: 20px;
+}
+
+.glyphicon {
+	margin: 5px;
+	font-size: 16px;
 }
