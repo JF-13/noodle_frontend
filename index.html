@@ -12,9 +12,10 @@
 	<link href="https://fonts.googleapis.com/css?family=Baloo+Bhaijaan" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Baloo+Bhaijaan|Montserrat" rel="stylesheet">
 	<!-- togle switch link -->
-	<link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
+
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<link href="https://fonts.googleapis.com/css?family=Baloo+Bhaijaan|Dancing+Script|Montserrat" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Baloo+Bhaijaan|Dancing+Script|Montserrat|Questrial" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
@@ -25,23 +26,64 @@
 	<div class="row">
 
 		<div class="col-md-3">
-			<h3 class="plantTitle">Clementine</h3>
-			<h3 class="controlsTitle">controls</h3>
+			<h3 class="plantTitle">Ficus Bonsai</h3>
+			<h3 class="controlsTitle">system controls</h3>
+			<div class="row">
+
+				<div class="col-md-1"></div>
+				<div class="col-md-10">
+					<button type="button" class="btn btn-warning light" data-toggle="button" aria-pressed="false" autocomplete="off">
+  <span class="glyphicon glyphicon-certificate"></span> LIGHT
+  </button>
+				</div>
+				<div class="col-md-1"></div>
+			</div>
 			<div class="row">
 				<div class="col-md-1"></div>
-				<div class="col-md-5 light">
-					<input class="toggle" type="checkbox" data-toggle="toggle" data-on="light off" data-off="light on" data-onstyle="default">
-				</div>
-				<div class="col-md-5 water">
-					<input class="toggle water" type="checkbox" data-toggle="toggle" data-on="water on" data-off="water off" data-onstyle="default">
+				<div class="col-md-10">
+
+					<button type="button" class="btn btn-info water" data-toggle="button" aria-pressed="false" autocomplete="off">
+  <span class="glyphicon glyphicon-tint"></span> WATER
+  </button>
 				</div>
 				<div class="col-md-1"></div>
 			</div>
 		</div>
 
 		<div class="col-md-9">
-			<h1 class="head title">noodle</h1>
-			<hr class="headUnderline">
+			<div class="row">
+				<h1 class="head title">noodle</h1>
+				<hr class="headUnderline">
+			</div>
+			<div class="row">
+				<!-- <div class="col-md-1"></div> -->
+				<div class="col-md-3">
+					<h3 class="sensors moisture">
+				  	90<span class="glyphicon glyphicon-menu-down"></span>
+				  </h3>
+					<h3 class="sensors description">moisture</h3>
+				</div>
+				<div class="col-md-3">
+					<h3 class="sensors humidity">
+					90<span class="glyphicon glyphicon-menu-up"></span>
+					</h3>
+					<h3 class="sensors description">humidity</h3>
+				</div>
+				<div class="col-md-3">
+					<h3 class="sensors temperature">
+					90<span class="glyphicon glyphicon-menu-down"></span>
+					</h3>
+					<h3 class="sensors description">temperature</h3>
+				</div>
+				<div class="col-md-3">
+					<h3 class="sensors exposure">
+					90<span class="glyphicon glyphicon-menu-up"></span>
+					</h3>
+					<h3 class="sensors description">exposure</h3>
+				</div>
+				<!-- <div class="col-md-1"></div> -->
+
+			</div>
 		</div>
 
 	</div>

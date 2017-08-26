@@ -1,4 +1,5 @@
 /*  custom styles */
+@import url('//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css');
 
 body {
   background-color: rgb(23,33,42);
@@ -14,44 +15,86 @@ body {
 
 .title {
 
-  font-size: 5em;
-}
-
-.controlsTitle {
-  display: table;
-  margin: auto;
-  font-size: 27px;
-  color: rgb(149,165,166);
-  font-family: 'Montserrat', sans-serif;
-  margin-bottom: 15px;
-}
-
-.plantTitle {
-  font-size: 4em;
-  display: table;
-  margin: auto;
-
-  color: rgb(236,240,241);
-  font-family: 'Dancing Script', cursive;
-  margin-bottom: 0;
-  margin-top: 135px;
+  font-size: 6em;
 }
 
 .headUnderline {
   margin-top: 0;
-  background-color: rgb(236,240,241);
-  width: 900px;
+  background-color: rgb(149, 165, 166);
+  width: 920px;
   float: left;
 }
 
 
 
-.btn {
+.light {
   display: table;
   margin: auto;
   background-color: white;
   background: rgb(61, 86, 110);
   color: rgb(149, 165, 166);
   border-color: rgb(189, 195, 199);
+  width: 100%;
+  margin-bottom: 15px;
+  font-family: 'Montserrat', sans-serif;
+}
 
+.water {
+  display: table;
+  margin: auto;
+  background-color: white;
+  background: rgb(61, 86, 110);
+  color: rgb(149, 165, 166);
+  border-color: rgb(189, 195, 199);
+  width: 100%;
+  margin-bottom: 15px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.plantTitle {
+  font-size: 3em;
+  display: table;
+  margin: auto;
+  color: rgb(149,165,166);
+  /*color: rgb(236,240,241);*/
+  font-family: 'Dancing Script', cursive;
+  margin-bottom: 5;
+  margin-top: 135px;
+}
+
+.controlsTitle {
+  display: table;
+  margin: auto;
+  font-size: 20px;
+  color: rgb(149,165,166);
+  font-family: 'Montserrat', sans-serif;
+  margin-bottom: 15px;
+}
+
+.sensors {
+  font-size: 30px;
+  margin-top: 30px;
+}
+
+.description {
+  color: rgb(189,195,199);
+  font-family: 'Questrial', sans-serif;
+  font-size: 17px;
+  margin-top: 0;
+}
+
+.moisture {
+  color: rgb(142,68,173);
+}
+
+.humidity {
+  color: rgb(231,76,60);
+}
+
+.temperature {
+  color: rgb(230,126,34);
+}
+
+.exposure {
+  color: rgb(41,128,185);
 }
