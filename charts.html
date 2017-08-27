@@ -1,0 +1,59 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="utf-8">
+    <head>
+        <style>
+
+        body {
+        font: 10px sans-serif;
+        }
+
+        .axis path,
+        .axis line {
+        fill: none;
+        stroke: #000;
+        shape-rendering: crispEdges;
+        }
+
+        .x.axis path {
+        display: none;
+        }
+
+        .line {
+        fill: none;
+        stroke: steelblue;
+        stroke-width: 1.5px;
+        }
+
+        .legend rect {
+        fill:white;
+        stroke:black;
+        opacity:0.8;
+        }
+
+
+        </style>
+        <!-- JQuery -->
+        <script src="https://code.jquery.com/jquery.js"></script>
+    </head>
+    <body>
+        <div>
+            <div>Container for Chart 1</div>
+            <div id="chart1"></div>
+        </div>
+        <div>
+            <div>Container for Chart 2</div>
+            <div id="chart2"></div>
+        </div>
+        <div>
+            <div>Container for Chart 3</div>
+            <div id="chart3"></div>
+        </div>
+       
+        <script src="http://d3js.org/d3.v3.js"></script>
+        <script src="js/legend.js"></script>
+        <script src="js/chart.js"></script>
+    </body>
+    </html>

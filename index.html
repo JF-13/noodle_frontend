@@ -16,7 +16,16 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<link href="https://fonts.googleapis.com/css?family=Baloo+Bhaijaan|Dancing+Script|Montserrat" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Baloo+Bhaijaan|Dancing+Script|Montserrat|Questrial" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Baloo+Bhaijaan|Dancing+Script|Encode+Sans+Condensed|Montserrat|Questrial" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="style.css">
+
+	<script src="js/liquidFillGauge.js" language="JavaScript"></script>
+	<style>
+		.liquidFillGaugeText {
+			font-family: Helvetica;
+			font-weight: bold;
+		}
+	</style>
 </head>
 
 <body>
@@ -55,6 +64,22 @@
 					<button type="button" class="btn btn-success water" data-toggle="button" aria-pressed="false" autocomplete="off">
 	<span class="glyphicon glyphicon-plane"></span> AUTO
 	</button>
+				</div>
+				<div class="col-md-1"></div>
+			</div>
+
+
+			<div class="row">
+				<div class="col-md-3"></div>
+				<div class="col-md-6">
+					<svg id="fillgauge1" width="97%" height="250" onclick="gauge1.update(NewValue());"></svg>
+				</div>
+				<div class="col-md-3"></div>
+			</div>
+			<div class="row">
+				<div class="col-md-1"></div>
+				<div class="col-md-10">
+					<h3 class="waterLevel">RESERVOIR</h3>
 				</div>
 				<div class="col-md-1"></div>
 			</div>
@@ -99,14 +124,45 @@
 				<!-- <div class="col-md-1"></div> -->
 
 			</div>
+			<div class="row">
+				<div class="col-md-6">
+					<div>
+						<div>Container for Chart 1</div>
+						<div id="chart1"></div>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div>
+						<div>Container for Chart 2</div>
+						<div id="chart2"></div>
+					</div>
+				</div>
+			</div>
 		</div>
 
 	</div>
+	<!-- tonys charts -->
+	<script src="https://code.jquery.com/jquery.js"></script>
+	<script src="http://d3js.org/d3.v3.js"></script>
+	<script src="js/legend.js"></script>
+	<script src="js/chart.js"></script>
+	<script language="JavaScript">
+		var gauge1 = loadLiquidFillGauge("fillgauge1", 55);
+		var config1 = liquidFillGaugeDefaultSettings();
+		config1.circleColor = "#FF7777";
+		config1.textColor = "#FF4444";
+		config1.waveTextColor = "#FFAAAA";
+		config1.waveColor = "#FFDDDD";
+		config1.circleThickness = 0.2;
+		config1.textVertPosition = 0.2;
+		config1.waveAnimateTime = 1000;
+	</script>
 	<!-- </div> -->
 	<script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js" integrity="sha384-vZ2WRJMwsjRMW/8U7i6PWi6AlO1L79snBrmgiDpgIWJ82z8eA5lenwvxbMV1PAh7" crossorigin="anonymous"></script>
 	<script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
+
 </body>
 
 </html>

@@ -65,7 +65,7 @@ body {
   margin: auto;
   color: rgb(149,165,166);
   /*color: rgb(236,240,241);*/
-  font-family: 'Dancing Script', cursive;
+  font-family: 'Encode Sans Condensed', sans-serif; sans-serif;
   margin-bottom: 5;
   margin-top: 145px;
 }
@@ -78,6 +78,18 @@ body {
   color: rgb(61,86,110);
   font-family: 'Montserrat', sans-serif;
   margin-bottom: 30px;
+}
+
+#fillgauge1 {
+  width: 100%;
+  margin-top: -30px;
+}
+
+.waterLevel {
+  font-size: 15px;
+  color: rgb(61,86,110);
+  text-align: center;
+  margin-top: -50px;
 }
 
 .sensors {
@@ -124,4 +136,49 @@ body {
 .glyphicon {
 	margin: 5px;
 	font-size: 16px;
+}
+
+/*graph styles!*/
+.axis path,
+.axis line {
+fill: none;
+stroke: white;
+shape-rendering: crispEdges;
+}
+
+.x.axis path {
+
+color: white;
+background-color: white;
+}
+
+
+
+.legend rect {
+fill:white;
+stroke: white;
+opacity:0.8;
+}
+
+.line {
+  stroke: white;
+  stroke-width: 1.5px;
+  fill: none;
+  color: white;
+}
+
+.tick {
+  color: white;
+  fill: none;
+  background-color: white;
+}
+text {
+  color: rgb(149, 165, 166);
+  fill: rgb(149, 165, 166);
+  background-color: none;
+}
+
+.legend rect {
+  fill: none;
+  border-radius: 10px;
 }
