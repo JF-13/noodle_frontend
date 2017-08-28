@@ -142,35 +142,35 @@ body {
 .axis path,
 .axis line {
 fill: none;
-stroke: white;
+stroke: rgb(149, 165, 166);
 shape-rendering: crispEdges;
 }
 
 .x.axis path {
 
-color: white;
-background-color: white;
+color: rgb(149, 165, 166);
+background-color: rgb(149, 165, 166);
 }
 
 
 
 .legend rect {
-fill:white;
-stroke: white;
+fill:rgb(149, 165, 166);
+stroke: rgb(149, 165, 166);
 opacity:0.8;
 }
 
 .line {
-  stroke: white;
+  stroke: rgb(149, 165, 166);
   stroke-width: 1.5px;
   fill: none;
-  color: white;
+  color: rgb(149, 165, 166);
 }
 
 .tick {
-  color: white;
+  color: rgb(149, 165, 166);
   fill: none;
-  background-color: white;
+  background-color: rgb(149, 165, 166);
 }
 text {
   color: rgb(149, 165, 166);

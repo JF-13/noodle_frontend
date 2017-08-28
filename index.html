@@ -6,11 +6,11 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
 	<title>noodle</title>
-
+	<script src="https://code.jquery.com/jquery.js"></script>
+	<script src="https://npmcdn.com/tether@1.2.4/dist/js/tether.min.js"></script>
+	<script src="https://npmcdn.com/bootstrap@4.0.0-alpha.5/dist/js/bootstrap.min.js"></script>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
 
-	<link href="https://fonts.googleapis.com/css?family=Baloo+Bhaijaan" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Baloo+Bhaijaan|Montserrat" rel="stylesheet">
 	<!-- togle switch link -->
 
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -97,25 +97,25 @@
 			<div class="row">
 				<!-- <div class="col-md-1"></div> -->
 				<div class="col-md-3">
-					<h3 class="sensors humidity">
+					<h3 class="sensors humidity" id="humid">
 				  	84% <span class="glyphicon glyphicon-menu-down down"></span>
 				  </h3>
 					<h3 class="sensors description">humidity</h3>
 				</div>
 				<div class="col-md-3">
-					<h3 class="sensors temperature">
-					73°F <span class="glyphicon glyphicon-menu-up up"></span>
+					<h3 class="sensors temperature" id="temp">
+					 <span class="glyphicon glyphicon-menu-up up"></span>
 					</h3>
 					<h3 class="sensors description">temperature</h3>
 				</div>
 				<div class="col-md-3">
-					<h3 class="sensors exposure">
+					<h3 class="sensors exposure" id="light">
 					7hrs <span class="glyphicon glyphicon-menu-down down"></span>
 					</h3>
 					<h3 class="sensors description">exposure</h3>
 				</div>
 				<div class="col-md-3">
-					<h3 class="sensors moisture">
+					<h3 class="sensors moisture" id="soil">
 					638 <span class="glyphicon glyphicon-menu-up up"></span>
 					</h3>
 					<h3 class="sensors description">moisture</h3>
@@ -137,6 +137,21 @@
 					</div>
 				</div>
 			</div>
+			<div class="row">
+				<div class="col-md-6">
+					<div>
+							<div>Container for Chart 3</div>
+							<div id="chart3"></div>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div>
+						<div>Container for Chart 2</div>
+						<div id="chart4"></div>
+					</div>
+				</div>
+			</div>
+
 		</div>
 
 	</div>

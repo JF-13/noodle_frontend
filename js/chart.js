@@ -15,6 +15,25 @@ $.ajax({
         drawChart(data, "#chart3", ["soil", "water", "light"], "Reading");
         drawChart(data, "#chart1", ["temp"], "Temperature (C)");
         drawChart(data, "#chart2", ["humid"], "Humidity (%)");
+        drawChart(data, "#chart4", ["light"], "Light (scale)");
+        //loading sensor data single sensor display on html
+        var temp = (data[(data.length-1)].temp).substr(0, 4);
+        $("#temp").html(temp + "°F");
+        var humid = (data[(data.length-1)].humid).substr(0, 4);
+        $("#humid").html(humid + "%");
+        var soil = (data[(data.length-1)].soil).substr(0, 4);
+        $("#soil").html((soil * 100) + "%");
+        var light = (data[(data.length-1)].light).substr(0, 4);
+        if (light < .2) {
+          var lightDisplay = ("Dark");
+        } else if (light < .3) {
+          var lightDisplay = ("Dim");
+        } else if (light < .7) {
+          var lightDisplay = ("Day");
+        } else if(light < 1) {
+          var lightDisplay = ("Bright");
+        }
+        $("#light").html(lightDisplay);
     },
 
     error: function() {
@@ -23,6 +42,7 @@ $.ajax({
 });
 
 var drawChart = function(data, targetDiv, keys, yAxisLabel){
+
 
     var margin = {top:35, right: 50, bottom: 30, left: 50},
     width = 500 - margin.left - margin.right,
