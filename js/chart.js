@@ -34,6 +34,22 @@ $.ajax({
           var lightDisplay = ("Bright");
         }
         $("#light").html(lightDisplay);
+
+        //loading ligth and water button data
+        var ligthOn = (data[(data.length-1)].lightOn);
+        var waterOn = (data[(data.length-1)].waterOn);
+        var autoLight = (data[(data.length-1)].autoLightOn);
+        var autoWater = (data[(data.length-1)].autoWaterOn);
+        if (ligthOn) {
+          console.log("yes and?");
+          $(".light").addClass("focus")
+        }
+        if (waterOn) {
+          $(".water").addClass("focus")
+        }
+        if (autoLight && autoWater) {
+          $(".auto").addClass("focus")
+        }
     },
 
     error: function() {

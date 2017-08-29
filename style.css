@@ -59,6 +59,18 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 
+.auto {
+  display: table;
+  margin: auto;
+  background-color: white;
+  background: rgb(61, 86, 110);
+  color: rgb(149, 165, 166);
+  border-color: rgb(189, 195, 199);
+  width: 100%;
+  margin-bottom: 15px;
+  font-family: 'Montserrat', sans-serif;
+}
+
 .plantTitle {
   font-size: 3em;
   display: table;
